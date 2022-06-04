@@ -1,4 +1,3 @@
-console.log("hello");
 var tod = {};
 var svebtn = $(".saveBtn");
 
