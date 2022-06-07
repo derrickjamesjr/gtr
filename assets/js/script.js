@@ -1,18 +1,18 @@
-var tod = {};
+var tod = [];
 var svebtn = $(".saveBtn");
+var txtbox = $(".textarea");
 
 
-function tsk1() { 
-    var schedule = $('textarea[name="evnt"]').val();
-    console.log(schedule);
-}
-function savetask(event) {
-    var bttn = $(event.target);
-    if () {
+svebtn.on("click", function() { 
+       
+    var strttime = $(this).parent().attr("id");
+    var entry = $(this).siblings(".time-task").val();
+    
+    localStorage.setItem(strttime, entry);
+    console.log(strttime, entry);
+});
 
-    }
-    this.parent("div").on("click", tsk1);
-} 
-svebtn.on("click", tsk1);
+console.log(localStorage.getItem("9"));
+$("#9 .time-task").val(localStorage.getItem("9"));
 
 
