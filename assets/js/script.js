@@ -1,6 +1,20 @@
 var svebtn = $(".saveBtn");
 var txtbox = $(".textarea");
 
+var now =  function() {
+   var date = moment().format("MMMM Do, YYYY hh:mm:ss a");
+   var datetime = $("#currentDay");
+
+   console.log(date);   
+   datetime.append(date);
+};
+now();
+
+var whenitsdue = function() {
+    var time = moment(date, "L").set(hour, "17");
+    var now = moment().format("hh:mm:ss a");
+      
+}
 
 svebtn.on("click", function() { 
        
